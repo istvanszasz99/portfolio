@@ -1,6 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiReact, SiGit, SiGithub, SiMysql, SiMongodb, SiUnrealengine, SiUnity} from "react-icons/si";
-import { BsBootstrapFill} from "react-icons/bs";
-import { DiNodejsSmall } from "react-icons/di";
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiJquery, SiNodedotjs, SiReact,  SiAngular, SiGit, SiDocker, SiMongodb, SiUnrealengine, SiUnity, SiMicrosoftoffice, SiAmazonaws, SiFigma, SiNextdotjs} from "react-icons/si";
 import { TbApi, TbSql } from "react-icons/tb";
 
 export const SkillData = [
@@ -20,9 +18,9 @@ export const SkillData = [
     title: "Javascript",
   },
   {
-    slug: "bootstrap",
-    Component: BsBootstrapFill,
-    title: "Bootstrap",
+    slug: "typescript",
+    Component: SiTypescript,
+    title: "Typescript",
   },
   {
     slug: "jquery",
@@ -31,18 +29,23 @@ export const SkillData = [
   },
   {
     slug: "node.js",
-    Component: DiNodejsSmall,
+    Component: SiNodedotjs,
     title: "Node.js",
   },
   {
     slug: "react.js",
     Component: SiReact,
-    title: "React.js",
+    title: "React",
   },
   {
-    slug: "api",
+    slug: "angular",
+    Component: SiAngular,
+    title: "Angular",
+  },
+  {
+    slug: "rest_api",
     Component: TbApi,
-    title: "API",
+    title: "REST API",
   },
   {
     slug: "git",
@@ -50,19 +53,14 @@ export const SkillData = [
     title: "Git",
   },
   {
-    slug: "github",
-    Component: SiGithub,
-    title: "GitHub",
+    slug: "docker",
+    Component: SiDocker,
+    title: "Docker",
   },
   {
     slug: "sql",
     Component: TbSql,
     title: "SQL",
-  },
-  {
-    slug: "mysql",
-    Component: SiMysql,
-    title: "MySQL",
   },
   {
     slug: "mongodb",
@@ -79,4 +77,24 @@ export const SkillData = [
     Component: SiUnity,
     title: "Unity",
   },
+  {
+    slug: "msoffice",
+    Component: SiMicrosoftoffice,
+    title: "Microsoft Office",
+  },
+  {
+    slug: "nextjs",
+    Component: SiNextdotjs,
+    title: "Next.js (Learning in progress)",
+  },
+  {
+    slug: "aws",
+    Component: SiAmazonaws,
+    title: "AWS (Learning in progress)",
+  },
+  {
+    slug: "figma",
+    Component: SiFigma,
+    title: "Figma (Learning in progress)",
+  }
 ];

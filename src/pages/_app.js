@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>István Szász - Developer</title>
+        <title>István Szász - Web Developer</title>
       </Head>
       <Theme>
         <Component {...pageProps} />

@@ -6,7 +6,7 @@ https://istvanszasz99.github.io/portfolio/
 
 Run this project with NPM
 ```bash 
-  npm && npm run dev
+  npm run dev
 ```
     
 ## Deployment

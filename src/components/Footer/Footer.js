@@ -10,7 +10,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Designed & built by István Szász.</Slogan>
+          <Slogan>Built by István Szász.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/istvanszasz99">
