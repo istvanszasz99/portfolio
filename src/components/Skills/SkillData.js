@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiJquery, SiNodedotjs, SiReact,  SiAngular, SiGit, SiDocker, SiMongodb, SiUnrealengine, SiUnity, SiMicrosoftoffice, SiAmazonaws, SiFigma, SiNextdotjs} from "react-icons/si";
+import { SiHtml5, SiCss3, SiSass, SiTailwindcss, SiJavascript, SiTypescript, SiJquery, SiNodedotjs, SiReact,  SiAngular, SiGit, SiDocker, SiMongodb, SiUnrealengine, SiUnity, SiMicrosoftoffice, SiAmazonaws, SiFigma, SiNextdotjs} from "react-icons/si";
 import { TbApi, TbSql } from "react-icons/tb";
 
 export const SkillData = [
@@ -11,6 +11,16 @@ export const SkillData = [
     slug: "css",
     Component: SiCss3,
     title: "CSS",
+  }, 
+  {
+    slug: "sass",
+    Component: SiSass,
+    title: "SASS",
+  },
+  {
+    slug: "tailwindcss",
+    Component: SiTailwindcss,
+    title: "Tailwind CSS",
   },
   {
     slug: "javascript",

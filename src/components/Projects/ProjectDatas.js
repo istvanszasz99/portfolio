@@ -1,3 +1,4 @@
+
 export const projects = [
   {
     title: 'Portfolio Website',
@@ -5,7 +6,14 @@ export const projects = [
     image: 'https://raw.githubusercontent.com/istvanszasz99/portfolio/main/public/images/portfolio.jpg',
     tags: ['HTML', 'CSS', 'Javascript', 'React'],
     source: 'https://github.com/istvanszasz99/portfolio',
-    visit: '',
     id: 1,
+  },
+  {
+    title: 'Pizza Time Webstore',
+    description: "Webstore that created for practice and expanding my portfolio",
+    image: 'https://raw.githubusercontent.com/istvanszasz99/portfolio/main/public/images/PizzaBanner.jpg',
+    tags: ['HTML', 'Javascript', 'React', 'Tailwind CSS', 'Typescript'],
+    source: 'https://github.com/istvanszasz99/WebstoreProject',
+    id: 2,
   },
 ];
