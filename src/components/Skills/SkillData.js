@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiSass, SiTailwindcss, SiJavascript, SiTypescript, SiJquery, SiNodedotjs, SiReact,  SiAngular, SiGit, SiDocker, SiMongodb, SiUnrealengine, SiUnity, SiMicrosoftoffice, SiAmazonaws, SiFigma, SiNextdotjs} from "react-icons/si";
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiNodedotjs, SiReact, SiAngular, SiGit, SiUnrealengine, SiUnity, SiMicrosoftoffice, SiNextdotjs, SiStrapi} from "react-icons/si";
 import { TbApi, TbSql } from "react-icons/tb";
 
 export const SkillData = [
@@ -13,11 +13,6 @@ export const SkillData = [
     title: "CSS",
   }, 
   {
-    slug: "sass",
-    Component: SiSass,
-    title: "SASS",
-  },
-  {
     slug: "tailwindcss",
     Component: SiTailwindcss,
     title: "Tailwind CSS",
@@ -31,11 +26,6 @@ export const SkillData = [
     slug: "typescript",
     Component: SiTypescript,
     title: "Typescript",
-  },
-  {
-    slug: "jquery",
-    Component: SiJquery,
-    title: "jQuery",
   },
   {
     slug: "node.js",
@@ -63,24 +53,19 @@ export const SkillData = [
     title: "Git",
   },
   {
-    slug: "docker",
-    Component: SiDocker,
-    title: "Docker",
-  },
-  {
     slug: "sql",
     Component: TbSql,
     title: "SQL",
   },
   {
-    slug: "mongodb",
-    Component: SiMongodb,
-    title: "mongoDB",
-  },
-  {
     slug: "unrealengine",
     Component: SiUnrealengine,
     title: "Unreal Engine",
+  },
+  {
+    slug: "twinmotion",
+    Component: SiUnrealengine,
+    title: "Twinmotion",
   },
   {
     slug: "unity",
@@ -91,20 +76,15 @@ export const SkillData = [
     slug: "msoffice",
     Component: SiMicrosoftoffice,
     title: "Microsoft Office",
+  }, 
+  {
+    slug: "strapi",
+    Component: SiStrapi,
+    title: "Strapi",
   },
   {
     slug: "nextjs",
     Component: SiNextdotjs,
     title: "Next.js (Learning in progress)",
-  },
-  {
-    slug: "aws",
-    Component: SiAmazonaws,
-    title: "AWS (Learning in progress)",
-  },
-  {
-    slug: "figma",
-    Component: SiFigma,
-    title: "Figma (Learning in progress)",
   }
 ];
