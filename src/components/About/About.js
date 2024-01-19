@@ -21,7 +21,7 @@ const About = (props) => (
         </SectionText>
         <Button onClick={(x) => {
           x.preventDefault();
-          window.location.href = 'https://raw.githubusercontent.com/istvanszasz99/portfolio/main/public/files/resume.pdf';
+          window.location.href = 'https://github.com/istvanszasz99/portfolio/blob/main/public/files/resume.pdf';
         }}>Resume</Button>
       </LeftSection>
     </Section>
