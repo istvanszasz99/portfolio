@@ -1,19 +1,37 @@
-## Preview
+# Personal portfolio page
+It's a personal portfolio page to showcase my skills and projects in the IT field. The Website was built with React + Tailwind CSS. The informations on this page are Up to date.
 
-https://istvanszasz99.github.io/portfolio/
+## Features
+- About Me
+- Skills
+- Contact
+- Projects
+## Screenshots
+![App Screenshot](public/images/portfolio.jpg)
 
-## Run Project 
+## Run Locally
+Clone my repository
+```bash
+  git clone https://github.com/istvanszasz99/portfolio.git
+```
 
-Run this project with NPM
-```bash 
+Go to the project directory
+```bash
+  cd portfolio
+```
+
+Install dependencies
+```bash
+  npm install
+```
+
+Start the server
+```bash
   npm run dev
 ```
-    
-## Deployment
-To deploy this project run
 
-```bash
-  npm build
-```
-#Issue with the image render, searching solution to handle
-#Issue with the resume button, not loading in the resume.pdf
+## Preview
+https://istvanszasz99.github.io/portfolio/
+
+## Author
+- [@istvanszasz99](https://www.github.com/istvanszasz99)
