@@ -11,13 +11,10 @@ const About = (props) => (
           Hi there,
         </SectionTitle>
         <SectionText>
-        I'm István Szász. 
-        24 years old Developer from Hungary.
-        I am currently a graduate student of Computer Engineering at the University of Óbuda.
-        Through my university years I studied lot about programming languages and frameworks.
-        I am also expanding my IT knowledge outside the university with online courses.
-        I wrote my university thesis with Unreal Engine 5.
-        In my free time I usually learn about programming, Notebook & PC servicing, hang out with my friends, doing free time activities, playing video games, watching movies or TV series.
+        My name is István Szász, a 24-year-old developer from Hungary.
+        I am currently a graduate student in Computer Engineering at the University of Óbuda. Throughout my university education, I have gained extensive knowledge in programming languages and frameworks. Additionally, I am committed to expanding my IT expertise beyond the classroom through various online courses. 
+        For my university thesis, I utilized Unreal Engine 5, demonstrating my proficiency in game development and real-time 3D creation.
+        In my spare time, I further enhance my programming skills, engage in Notebook and PC repair, and enjoy various leisure activities. These include socializing with friends, following Formula 1 & WEC, hobby cooking, and playing video games.
         </SectionText>
         <Button onClick={(x) => {
           x.preventDefault();

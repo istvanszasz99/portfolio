@@ -85,6 +85,6 @@ export const SkillData = [
   {
     slug: "nextjs",
     Component: SiNextdotjs,
-    title: "Next.js (Learning in progress)",
+    title: "Next.js (Learning)",
   }
 ];
