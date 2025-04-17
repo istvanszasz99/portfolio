@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import pic_3Dgame from "../../public/pic_3Dgame.png";
+import pic_backend from "../../public/pic_backend.png";
 import pic_university from "../../public/pic_university.png";
 import pic_reactnative from "../../public/pic_reactnative.png";
 import pic_frontend from "../../public/pic_frontend.png";
@@ -14,16 +14,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "3D survival game made for university project work",
-    image: pic_3Dgame as ImageMetadata,
-    link: "https://github.com/istvanszasz99/ObudaUniverityProjectWorkUE4",
-    status: "3D Development",
-  },
-  {
-    title: "Simulation of the University Campus in 3D Environment",
-    image: pic_university as ImageMetadata,
-    link: "https://github.com/istvanszasz99/ObudaUniverityThesis",
-    status: "3D Development",
+    title: "Meta Back-End Developer Certification Capstone",
+    image: pic_backend as ImageMetadata,
+    link: "https://github.com/istvanszasz99/Meta_Back-End_Developer_Professional_Certificate_Back-End_Developer_Capstone_Portfolio_Project",
+    status: "Web Development",
   },
   {
     title: "Meta Front-End Developer Certification Capstone",
@@ -36,6 +30,12 @@ const projects: Project[] = [
     image: pic_reactnative as ImageMetadata,
     link: "https://github.com/istvanszasz99/Meta_React_Native_Specialization_Capstone_React_App_Portfolio_Project",
     status: "Mobile Development",
+  },
+  {
+    title: "Simulation of the University Campus in 3D Environment",
+    image: pic_university as ImageMetadata,
+    link: "https://github.com/istvanszasz99/ObudaUniverityThesis",
+    status: "3D Development",
   },
 ];
 ---
