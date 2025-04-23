@@ -33,7 +33,7 @@ const SkillsList = () => {
       'Authentication & Authorization',
       'Data validation & Error handling',
       'Using MVC & MVT architecture',
-      'Development with Node.js, Django & Laravel',
+      'Development with Express.js, Django & Laravel',
     ],
     'Mobile Development': [
       'Programming React Native mobile apps',
