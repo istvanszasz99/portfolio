@@ -25,9 +25,10 @@ const SkillsList = () => {
     'Front-End Development': [
       'Dynamic Web Applications',
       'Development with React & TypeScript',
-      'Styling with Tailwind CSS & Bootstrap',
+      'Styling with Tailwind CSS, Bootstrap & MUI',
       'Responsive Web Design & Mobile-first approach',
       'State management with Redux',
+      'Search engine optimization (SEO)',
       ],
     'Back-End Development': [
       'REST APIs & CRUD operation management',
@@ -35,7 +36,7 @@ const SkillsList = () => {
       'Data validation & Error handling',
       'Middleware & Routing',
       'Using MVC & MVT architecture',
-      'Development with Express.js, Django & Laravel',
+      'Development with Express, Django & ASP.NET Core',
       'Docker, Kubernetes, OpenShift & CI/CD',
       'DevOps & Cloud computing',
       'Database management with SQL & NoSQL',
