@@ -16,7 +16,7 @@ const technologies = [
   "Python",
   "Django",
   "Csharp",
-  ".NET",
+  "dotNET",
   "Blazor",
   "PHP",
   "Docker",
@@ -61,7 +61,7 @@ const technologies = [
           loading="lazy"
         />
         <span class="text-lg font-medium text-[var(--white-icon)]">
-            {tech === "Csharp" ? "C#" : tech}
+            {tech === "Csharp" ? "C#" : tech === "dotNET" ? ".NET" : tech}
         </span>
       </div>
     ))}
