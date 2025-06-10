@@ -2,35 +2,39 @@
 const technologies = [
   "HTML5",
   "CSS3",
-  "tailwindCSS",
-  "javaScript",
-  "typeScript",
-  "nodeJs",
-  "react",
-  "nextJs",
-  "viteJs",
-  "redux",
-  "graphQL",
-  "mongoDB",
-  "python",
-  "django",
+  "Tailwind CSS",
+  "Bootstrap",
+  "MUI",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Vite",
+  "Next.js",
+  "Redux",
+  "Express",
+  "Node.js",
+  "Python",
+  "Django",
+  "Csharp",
+  ".NET",
+  "Blazor",
   "PHP",
-  "laravel",
-  "expressJs",
-  "git",
-  "figma",
-  "vsCode",
-  "visualStudio",
-  "docker",
-  "kubernetes",
-  "openShift",
-  "GPT",
-  "astro",
-  "expo",
-  "netlify",
-  "unrealEngine",
-  "twinmotion",
-  "c++",
+  "Docker",
+  "Kubernetes",
+  "OpenShift",
+  "MySQL",
+  "SQLite",
+  "GraphQL",
+  "MongoDB",
+  "Git",
+  "GitHub",
+  "GitHub Copilot",
+  "Figma",
+  "Astro",
+  "Expo",
+  "C++",
+  "Unreal Engine",
+  "Twinmotion",
 ];
 ---
 
@@ -57,7 +61,7 @@ const technologies = [
           loading="lazy"
         />
         <span class="text-lg font-medium text-[var(--white-icon)]">
-          {tech.charAt(0).toUpperCase() + tech.slice(1)}
+            {tech === "Csharp" ? "C#" : tech}
         </span>
       </div>
     ))}
@@ -70,12 +74,12 @@ const technologies = [
   }
   
   .animate-scroll {
-    animation: scroll 60s linear infinite;
+    animation: scroll 120s linear infinite;
   }
   
   @media (min-width: 768px) {
     .animate-scroll {
-      animation-duration: 50s;
+      animation-duration: 60s;
     }
   }
 </style>

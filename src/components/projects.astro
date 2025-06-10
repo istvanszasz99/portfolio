@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import pic_backend from "../../public/pic_backend.png";
-import pic_university from "../../public/pic_university.png";
-import pic_reactnative from "../../public/pic_reactnative.png";
-import pic_frontend from "../../public/pic_frontend.png";
+import pic_backend from "../../public/image/pic_backend.png";
+import pic_university from "../../public/image/pic_university.png";
+import pic_reactnative from "../../public/image/pic_reactnative.png";
+import pic_frontend from "../../public/image/pic_frontend.png";
 
 interface Project {
   title: string;
@@ -61,7 +61,7 @@ const projects: Project[] = [
                   class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div class="flex items-center px-3">
+              <div class="flex items-center">
                 <div class="flex-grow">
                   <h4 class="text-2xl font-semibold">{project.title}</h4>
                   <span class="py-1 text-sm text-[var(--white-icon)]">
