@@ -2,7 +2,7 @@
 import {
   AstroLight,
   TailwindCSS,
-  Netlify,
+  Cloudflare,
   GitHubDark,
   LinkedIn,
 } from "@ridemountainpig/svgl-react";
@@ -66,8 +66,8 @@ type SvglIcon = (props: { width: number; height: number; class?: string }) => an
         },
         {
           desc: "Deployed on",
-          name: "Netlify",
-          component: Netlify as SvglIcon
+          name: "Cloudflare",
+          component: Cloudflare as SvglIcon
         }
           ].map((tech) => (
         <div class="flex items-center justify-center space-x-3">
