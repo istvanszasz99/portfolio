@@ -1,36 +1,50 @@
 ---
-const technologies = [
-  "PostgreSQL",
-  "Electron",
-  "GSAP",
+import {
+  Angular,
+  PostgreSQL,
+  Electron,
+  AmazonWebServicesLight,
+} from "@ridemountainpig/svgl-react";
+
+type SvglIcon = (props: { width: number; height: number; class?: string }) => any;
+
+type Technology =
+  | { label: string; icon: SvglIcon }
+  | { label: string; svgPath: string };
+
+const technologies: Technology[] = [
+  { label: "Angular",              icon: Angular as any },
+  { label: "PostgreSQL",           icon: PostgreSQL as any },
+  { label: "Electron",             icon: Electron as any },
+  { label: "GSAP",                 svgPath: "/svg/GSAP.svg" },
+  { label: "Amazon Web Services",  icon: AmazonWebServicesLight as any },
 ];
 ---
 
 <div class="relative overflow-x-hidden py-8">
-  <div class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[var(--bg)] to-transparent z-20"></div>
-  <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[var(--bg)] to-transparent z-20"></div>
-
   <div class="flex justify-center mx-auto gap-12 md:gap-20 w-max">
-    {[...technologies].map((tech) => (
+    {technologies.map((tech) => (
       <div class="flex items-center gap-2 group transition-all duration-300">
-        <img
-          src={`/svg/${tech}.svg`}
-          alt={tech}
-          class="h-7 w-auto object-contain opacity-60"
-          width="30"
-          height="30"
-          loading="lazy"
-        />
+        {"icon" in tech ? (
+          <tech.icon
+            width={32}
+            height={32}
+            class="h-7 w-auto object-contain opacity-60"
+          />
+        ) : (
+          <img
+            src={tech.svgPath}
+            alt={tech.label}
+            class="h-7 w-auto object-contain opacity-60"
+            width="32"
+            height="32"
+            loading="lazy"
+          />
+        )}
         <span class="text-lg font-medium text-[var(--white-icon)]">
-          {tech}
+          {tech.label}
         </span>
       </div>
     ))}
   </div>
 </div>
-
-<style>
-  :root {
-    --bg: #111;
-  }
-</style>

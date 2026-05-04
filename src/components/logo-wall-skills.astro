@@ -1,40 +1,83 @@
 ---
-const technologies = [
-  "HTML5",
-  "CSS3",
-  "Tailwind CSS",
-  "Bootstrap",
-  "MUI",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Vite",
-  "Next.js",
-  "Redux",
-  "Express",
-  "Node.js",
-  "Python",
-  "Django",
-  "Csharp",
-  "dotNET",
-  "Blazor",
-  "PHP",
-  "Docker",
-  "Kubernetes",
-  "OpenShift",
-  "MySQL",
-  "SQLite",
-  "GraphQL",
-  "MongoDB",
-  "Git",
-  "GitHub",
-  "GitHub Copilot",
-  "Figma",
-  "Astro",
-  "Expo",
-  "C++",
-  "Unreal Engine",
-  "Twinmotion",
+import {
+  HTML5,
+  CSS,
+  TailwindCSS,
+  Bootstrap,
+  MaterialUI,
+  JavaScript,
+  TypeScript,
+  ReactLight,
+  Vite,
+  Nextjs,
+  Redux,
+  ExpressjsLight,
+  Nodejs,
+  Python,
+  Django,
+  CSharp,
+  MicrosoftNET,
+  PhpLight,
+  Docker,
+  Kubernetes,
+  MicrosoftAzure,
+  MySQLLight,
+  SQLite,
+  GraphQL,
+  MongoDBLight,
+  Git,
+  GitHubDark,
+  GitHubCopilotDark,
+  Figma,
+  AstroLight,
+  Expo,
+  CPlusPlus,
+  UnrealEngineLight,
+} from "@ridemountainpig/svgl-react";
+
+type SvglIcon = (props: { width: number; height: number; class?: string }) => any;
+
+type Technology =
+  | { label: string; icon: SvglIcon }
+  | { label: string; svgPath: string };
+
+const technologies: Technology[] = [
+  { label: "HTML5",          icon: HTML5 as any },
+  { label: "CSS3",           icon: CSS as any },
+  { label: "Tailwind CSS",   icon: TailwindCSS as any },
+  { label: "Bootstrap",      icon: Bootstrap as any },
+  { label: "MUI",            icon: MaterialUI as any },
+  { label: "JavaScript",     icon: JavaScript as any },
+  { label: "TypeScript",     icon: TypeScript as any },
+  { label: "React",          icon: ReactLight as any },
+  { label: "Vite",           icon: Vite as any },
+  { label: "Next.js",        icon: Nextjs as any },
+  { label: "Redux",          icon: Redux as any },
+  { label: "Express",        icon: ExpressjsLight as any },
+  { label: "Node.js",        icon: Nodejs as any },
+  { label: "Python",         icon: Python as any },
+  { label: "Django",         icon: Django as any },
+  { label: "C#",             icon: CSharp as any },
+  { label: ".NET",           icon: MicrosoftNET as any },
+  { label: "Blazor",         svgPath: "/svg/Blazor.svg" },
+  { label: "PHP",            icon: PhpLight as any },
+  { label: "Docker",         icon: Docker as any },
+  { label: "Kubernetes",     icon: Kubernetes as any },
+  { label: "OpenShift",      svgPath: "/svg/OpenShift.svg" },
+  { label: "Azure",          icon: MicrosoftAzure as any },
+  { label: "MySQL",          icon: MySQLLight as any },
+  { label: "SQLite",         icon: SQLite as any },
+  { label: "GraphQL",        icon: GraphQL as any },
+  { label: "MongoDB",        icon: MongoDBLight as any },
+  { label: "Git",            icon: Git as any },
+  { label: "GitHub",         icon: GitHubDark as any },
+  { label: "GitHub Copilot", icon: GitHubCopilotDark as any },
+  { label: "Figma",          icon: Figma as any },
+  { label: "Astro",          icon: AstroLight as any },
+  { label: "Expo",           icon: Expo as any },
+  { label: "C++",            icon: CPlusPlus as any },
+  { label: "Unreal Engine",  icon: UnrealEngineLight as any },
+  { label: "Twinmotion",     svgPath: "/svg/Twinmotion.svg" },
 ];
 ---
 
@@ -50,18 +93,26 @@ const technologies = [
   <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[var(--bg)] to-transparent z-20"></div>
 
   <div class="flex animate-scroll hover:animate-paused gap-12 md:gap-20 w-max">
-    {[...technologies, ...technologies, ...technologies].map((tech) => (
+    {[...technologies, ...technologies].map((tech) => (
       <div class="flex items-center gap-2 group transition-all duration-300">
-        <img
-          src={`/svg/${tech}.svg`}
-          alt={tech}
-          class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
-          width="30"
-          height="30"
-          loading="lazy"
-        />
+        {"icon" in tech ? (
+          <tech.icon
+            width={32}
+            height={32}
+            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
+          />
+        ) : (
+          <img
+            src={tech.svgPath}
+            alt={tech.label}
+            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
+            width="32"
+            height="32"
+            loading="lazy"
+          />
+        )}
         <span class="text-lg font-medium text-[var(--white-icon)]">
-            {tech === "Csharp" ? "C#" : tech === "dotNET" ? ".NET" : tech}
+          {tech.label}
         </span>
       </div>
     ))}
@@ -72,14 +123,8 @@ const technologies = [
   :root {
     --bg: #111;
   }
-  
+
   .animate-scroll {
-    animation: scroll 120s linear infinite;
-  }
-  
-  @media (min-width: 768px) {
-    .animate-scroll {
-      animation-duration: 60s;
-    }
+    animation: scroll 60s linear infinite;
   }
 </style>
